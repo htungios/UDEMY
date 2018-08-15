@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'UDEMY VIETNAM' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for UDEMY VIETNAM
+
+# A clean and lightweight progress HUD for your iOS and tvOS app.
+
+pod 'SVProgressHUD', '~> 2.0'
+# Support show, hide keyboard
+pod 'IQKeyboardManagerSwift', '~> 5.0'
+# Support download image.
+
+
+pod 'TSCollection/ApiManager', :git => 'https://gitlab.com/tunghn/TSCollection.git', :branch => 'master'
+# XCGLogger is the original debug log module for use in Swift projects.
+pod 'XCGLogger', '~> 5.0'
+
+pod 'TTTAttributedLabel'
+pod 'SDWebImage', '~> 3.7'
+pod 'MobileVLCKit'
+pod 'ImageSlideshow', '~> 1.6'
+
+end

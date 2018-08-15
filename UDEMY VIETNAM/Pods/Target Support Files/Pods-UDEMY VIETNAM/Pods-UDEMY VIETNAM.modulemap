@@ -1,0 +1,6 @@
+framework module Pods_UDEMY_VIETNAM {
+  umbrella header "Pods-UDEMY VIETNAM-umbrella.h"
+
+  export *
+  module * { export * }
+}
