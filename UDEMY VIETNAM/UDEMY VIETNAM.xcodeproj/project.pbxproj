@@ -27,7 +27,6 @@
 		CC5CB71420EBC5EF00B66C90 /* BaseUIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CB6DD20EBC5EF00B66C90 /* BaseUIScrollView.swift */; };
 		CC5CB71520EBC5EF00B66C90 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CB6DF20EBC5EF00B66C90 /* TargetType.swift */; };
 		CC5CB71620EBC5EF00B66C90 /* UserProfileAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CB6E120EBC5EF00B66C90 /* UserProfileAPI.swift */; };
-		CC5CB72120EBC5EF00B66C90 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CB6ED20EBC5EF00B66C90 /* MediaService.swift */; };
 		CC5CB72220EBC5EF00B66C90 /* ViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CB6EF20EBC5EF00B66C90 /* ViewControllerOutput.swift */; };
 		CC5CB72320EBC5EF00B66C90 /* RouterOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CB6F020EBC5EF00B66C90 /* RouterOutputProtocol.swift */; };
 		CC5CB72420EBC5EF00B66C90 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CB6F120EBC5EF00B66C90 /* Protocols.swift */; };
@@ -119,7 +118,6 @@
 		CC5CB6DD20EBC5EF00B66C90 /* BaseUIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUIScrollView.swift; sourceTree = "<group>"; };
 		CC5CB6DF20EBC5EF00B66C90 /* TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		CC5CB6E120EBC5EF00B66C90 /* UserProfileAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileAPI.swift; sourceTree = "<group>"; };
-		CC5CB6ED20EBC5EF00B66C90 /* MediaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
 		CC5CB6EF20EBC5EF00B66C90 /* ViewControllerOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerOutput.swift; sourceTree = "<group>"; };
 		CC5CB6F020EBC5EF00B66C90 /* RouterOutputProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterOutputProtocol.swift; sourceTree = "<group>"; };
 		CC5CB6F120EBC5EF00B66C90 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
@@ -382,7 +380,6 @@
 		CC5CB6E720EBC5EF00B66C90 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				CC5CB6ED20EBC5EF00B66C90 /* MediaService.swift */,
 				CCF11FEB210795920056D3E8 /* UserProfileService.swift */,
 			);
 			path = Service;
@@ -670,7 +667,6 @@
 				CC5CB76A20EBD07F00B66C90 /* LoginWireframe.swift in Sources */,
 				CC5CB73820EBC5EF00B66C90 /* UIViewController.swift in Sources */,
 				CC5CB72A20EBC5EF00B66C90 /* NotificationName.swift in Sources */,
-				CC5CB72120EBC5EF00B66C90 /* MediaService.swift in Sources */,
 				CCCEE3AB211C1107002D7D5D /* LeftMenuInteractor.swift in Sources */,
 				CCF11FE9210788E10056D3E8 /* RxSwift+RxFunctions.swift in Sources */,
 				CC5CB71320EBC5EF00B66C90 /* BaseCollectionReusableView.swift in Sources */,
@@ -869,7 +865,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = U469N7T3UR;
+				DEVELOPMENT_TEAM = 4583NNQ8SU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -878,10 +874,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/UDEMY VIETNAM/Common/Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.unilever.PUSH-Development";
+				PRODUCT_BUNDLE_IDENTIFIER = com.udemy.udemyvietnam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "36d1105c-df15-4b45-8d76-ccdce6e2db70";
-				PROVISIONING_PROFILE_SPECIFIER = "OPS Distribution 2018";
+				PROVISIONING_PROFILE = "379612c1-296c-49e7-bbef-39ee73dbaf56";
+				PROVISIONING_PROFILE_SPECIFIER = UdemyDistribution;
 				SWIFT_OBJC_BRIDGING_HEADER = "UDEMY-VIETNAM-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -895,7 +891,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = U469N7T3UR;
+				DEVELOPMENT_TEAM = 4583NNQ8SU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -904,10 +900,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/UDEMY VIETNAM/Common/Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.unilever.PUSH-Development";
+				PRODUCT_BUNDLE_IDENTIFIER = com.udemy.udemyvietnam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "36d1105c-df15-4b45-8d76-ccdce6e2db70";
-				PROVISIONING_PROFILE_SPECIFIER = "OPS Distribution 2018";
+				PROVISIONING_PROFILE = "379612c1-296c-49e7-bbef-39ee73dbaf56";
+				PROVISIONING_PROFILE_SPECIFIER = UdemyDistribution;
 				SWIFT_OBJC_BRIDGING_HEADER = "UDEMY-VIETNAM-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -77,27 +77,6 @@ extension UserProfileService {
             return
         }
         
-//        Alamofire.request(url,
-//                          method: .post,
-//                          parameters: ["idUser": idUser])
-//            .validate()
-//            .responseJSON { response in
-//                guard response.result.isSuccess else {
-//                    print("Error while fetching remote rooms: \(String(describing: response.result.error)")
-//                        completion(nil)
-//                    return
-//                }
-//
-//                guard let value = response.result.value as? [String: Any],
-//                    let rows = value["rows"] as? [[String: Any]] else {
-//                        print("Malformed data received from fetchAllRooms service")
-//                        completion(nil)
-//                        return
-//                }
-//
-//                let rooms = rows.flatMap { roomDict in return RemoteRoom(jsonData: roomDict) }
-//                completion(rooms)
-//        }
         Alamofire.request(url,
                           method: .post,
                           parameters: ["idUser" : idUser],

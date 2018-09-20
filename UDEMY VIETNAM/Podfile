@@ -20,8 +20,8 @@ pod 'TSCollection/ApiManager', :git => 'https://gitlab.com/tunghn/TSCollection.g
 pod 'XCGLogger', '~> 5.0'
 
 pod 'TTTAttributedLabel'
-pod 'SDWebImage', '~> 3.7'
 pod 'MobileVLCKit'
-pod 'ImageSlideshow', '~> 1.6'
+pod 'ImageSlideshow', '~> 1.4'
+pod 'ImageSlideshow/SDWebImage'
 
 end

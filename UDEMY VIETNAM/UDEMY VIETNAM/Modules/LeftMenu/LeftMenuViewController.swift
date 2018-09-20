@@ -59,18 +59,8 @@ class LeftMenuViewController: UIViewController {
                 self?._index = page
             }
         }
-        
-        let recognizer = UITapGestureRecognizer(target: self, action: #selector(didTap))
-        slideshow.addGestureRecognizer(recognizer)
-        
+
         slideshow.contentScaleMode = .scaleAspectFit
-    }
-    
-    @objc fileprivate func didTap() {
-        let media = _medias[_index]
-        if let url = URL(string: media.link) {
-            UIApplication.shared.openURL(url)
-        }
     }
     
 }
@@ -82,12 +72,7 @@ extension LeftMenuViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
-        case 0:
-            return 1
-        default:
-            return 2
-        }
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -99,14 +84,8 @@ extension LeftMenuViewController: UITableViewDataSource {
             cell.titleLabel.text = "Các khoá học của tôi"
 
         default:
-            if indexPath.row == 0 {
-                cell.menuImage.image = #imageLiteral(resourceName: "ic_share")
-                cell.titleLabel.text = "Thông tin khuyến mại"
-            } else {
-                cell.menuImage.image = #imageLiteral(resourceName: "ic_send")
-                cell.titleLabel.text = "Đăng xuất"
-            }
-
+            cell.menuImage.image = #imageLiteral(resourceName: "ic_send")
+            cell.titleLabel.text = "Đăng xuất"
         }
         
         return cell
@@ -145,13 +124,8 @@ extension LeftMenuViewController: UITableViewDelegate {
         case 0:
             self.slideMenuController()?.closeLeft()
         default:
-            if indexPath.row == 0 {
-                output?.showPromotion(view: self)
-            } else {
-                self.slideMenuController()?.closeLeft()
-                self.dismiss(animated: false, completion: nil)
-                
-            }
+            self.slideMenuController()?.closeLeft()
+            self.dismiss(animated: false, completion: nil)
         }
     }
     
